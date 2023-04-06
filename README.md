@@ -8,6 +8,7 @@ Clone repository and install. Repo already has a seeded sqlite databse, migratio
 git clone https://github.com/ozbeksu/simpledo-server
 cd simpledo-server
 yarn
+cp .env.dev .env
 ```
 
 After installion finishes run dev server:
@@ -15,6 +16,8 @@ After installion finishes run dev server:
 ```shell
 yarn dev
 ```
+
+Visiting `http://localhost:3000/graphql` address should show Apollo Studio.
 
 ### Developent
 
