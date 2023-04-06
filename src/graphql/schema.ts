@@ -4,7 +4,7 @@ import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 import { applyMiddleware } from "graphql-middleware";
 import createResolvers from "./resolvers";
 import { guards } from "./guards";
-import { root } from "../utils";
+import { root } from "../utils/paths";
 
 const SCHEMA = addResolversToSchema({
   resolvers: createResolvers(),
