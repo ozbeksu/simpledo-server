@@ -1,0 +1,52 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  listTodos: [Todo!]!
+}
+
+type Mutation {
+  login(input: LoginInput!): User
+  signUp(input: SignUpInput!): User
+  createTodo(input: CreateTodoInput!): Todo!
+  deleteTodo(input: TodoInput!): Boolean!
+  markTodoCompleted(input: TodoInput!): Todo!
+  markTodoUncompleted(input: TodoInput!): Todo!
+}
+
+input TodoInput {
+  id: ID!
+}
+
+input CreateTodoInput {
+  title: String!
+}
+
+input SignUpInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  todos: [Todo!]!
+  token: String
+}
+
+type Todo {
+  id: ID!
+  title: String!
+  completed: Boolean!
+}

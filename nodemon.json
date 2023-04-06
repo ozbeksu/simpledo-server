@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "ignore": [".git", "node_modules", "dist"],
+  "execMap": {"js": "node"},
+  "watch": ["src"],
+  "exec": "npm start",
+  "ext": "ts,js,json,html"
+}

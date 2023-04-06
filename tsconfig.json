@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "sourceMap": true,
+    "removeComments": true
+  },
+  "exclude": ["**/node_modules", "**/*.spec.ts", "etc"],
+  "include": [
+    ".prettierrc.ts",
+    "graphql.config.ts",
+    "ormconfig.ts",
+    "src/**/*.ts"
+  ]
+}
