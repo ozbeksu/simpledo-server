@@ -2,7 +2,7 @@
 
 ### Install and Run
 
-Clone repository and install. Repo already has a seeded sqlite databse, migrations and generated types ready to go.
+Clone repository and install. Repo already has a seeded sqlite database, migrations and generated types ready to go.
 
 ```shell
 git clone https://github.com/ozbeksu/simpledo-server
@@ -11,7 +11,7 @@ yarn
 cp .env.dev .env
 ```
 
-After installion finishes run dev server:
+After installation finishes run dev server:
 
 ```shell
 yarn dev
